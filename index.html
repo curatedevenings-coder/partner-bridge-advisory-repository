@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PartnerBridge Advisory — Curated Expert Advisory for Biotech, Pharma &amp; Healthtech</title>
+    <meta
+      name="description"
+      content="PartnerBridge Advisory arranges curated one-on-one expert calls for biotech, pharma, and healthtech teams making high-stakes decisions on licensing, valuation, commercial strategy, and partnerships."
+    />
+    <meta property="og:title" content="PartnerBridge Advisory — Curated Expert Advisory for Biotech, Pharma &amp; Healthtech" />
+    <meta
+      property="og:description"
+      content="Curated one-on-one expert calls for biotech, pharma, and healthtech founders and teams making licensing, valuation, commercial, and partnership decisions."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#f4eee6" />
+    <link
+      rel="icon"
+      href='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="%23f4eee6"/><path d="M18 46V18h16.3c6.8 0 11.2 3.4 11.2 9.2 0 4.9-3 7.7-7.6 8.8L47 46H38.8l-7.4-9.7H26V46H18zm8-16.2h8.1c3.2 0 5-1.5 5-4.1 0-2.7-1.8-4.1-5-4.1H26v8.2z" fill="%231f2933"/></svg>'
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              paper: "#f4eee6",
+              sand: "#e8ddcf",
+              ink: "#1f2933",
+              muted: "#46515a",
+              accent: "#5f6d57",
+            },
+            boxShadow: {
+              soft: "0 18px 50px rgba(31, 41, 51, 0.06)",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      @font-face {
+        font-family: "Google Sans Local";
+        src: url("./assets/fonts/GoogleSans-VariableFont_GRAD,opsz,wght.ttf") format("truetype");
+        font-weight: 400 700;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Geist Mono Local";
+        src: url("./assets/fonts/GeistMono-VariableFont_wght.ttf") format("truetype");
+        font-weight: 100 900;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      :root {
+        --font-display: "Google Sans Local", "Helvetica Neue", Arial, sans-serif;
+        --font-body: "Google Sans Local", "Helvetica Neue", Arial, sans-serif;
+        --font-mono: "Geist Mono Local", "SFMono-Regular", Consolas, monospace;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: var(--font-body);
+        color: #1f2933;
+        background:
+          radial-gradient(circle at top left, rgba(111, 124, 102, 0.07), transparent 28%),
+          radial-gradient(circle at bottom right, rgba(111, 124, 102, 0.05), transparent 32%),
+          #f4eee6;
+      }
+
+      h1,
+      h2,
+      h3,
+      .display {
+        font-family: var(--font-display);
+        letter-spacing: -0.04em;
+        font-weight: 620;
+      }
+
+      .micro {
+        font-family: var(--font-mono);
+        letter-spacing: 0.24em;
+      }
+
+      .reveal {
+        opacity: 0;
+        transform: translateY(18px);
+        transition:
+          opacity 700ms ease,
+          transform 700ms ease;
+      }
+
+      .reveal.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .divider {
+        background: linear-gradient(90deg, transparent, rgba(31, 41, 51, 0.14), transparent);
+      }
+    </style>
+  </head>
+  <body class="antialiased">
+    <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-paper focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-ink focus:shadow-soft">
+      Skip to content
+    </a>
+
+    <header class="sticky top-0 z-40 border-b border-[rgba(31,41,51,0.08)] bg-[rgba(244,238,230,0.86)] backdrop-blur-md">
+      <div class="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-4 sm:px-6 lg:px-8">
+        <a href="#top" class="group inline-flex items-center gap-3 text-sm font-semibold tracking-[0.2em] text-ink uppercase">
+          <span class="micro flex h-9 w-9 items-center justify-center rounded-full border border-[rgba(31,41,51,0.12)] bg-paper text-[0.65rem] text-accent transition-colors group-hover:border-[rgba(111,124,102,0.35)]">
+            PB
+          </span>
+          <span class="hidden sm:inline">PartnerBridge Advisory</span>
+        </a>
+        <nav class="hidden items-center gap-7 text-sm text-ink/80 md:flex" aria-label="Primary">
+          <a class="transition-colors hover:text-ink" href="#what-this-is">What this is</a>
+          <a class="transition-colors hover:text-ink" href="#who-its-for">Who it&apos;s for</a>
+          <a class="transition-colors hover:text-ink" href="#how-it-works">How it works</a>
+          <a class="transition-colors hover:text-ink" href="#contact">Contact</a>
+        </nav>
+        <a
+          href="https://forms.google.com/PLACEHOLDER"
+          class="inline-flex items-center rounded-full border border-[rgba(31,41,51,0.12)] bg-ink px-4 py-2 text-sm font-semibold text-paper transition-colors hover:bg-[#31404a]"
+        >
+          Request a Call
+        </a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="top" class="mx-auto max-w-6xl px-5 pb-16 pt-10 sm:px-6 sm:pb-24 sm:pt-14 lg:px-8 lg:pb-28 lg:pt-16">
+        <div class="grid gap-12 lg:grid-cols-[1.25fr_0.75fr] lg:items-end">
+          <div class="max-w-3xl">
+            <h1 class="max-w-4xl text-5xl leading-[0.92] text-ink sm:text-6xl lg:text-[5.35rem]">
+              PartnerBridge Advisory
+            </h1>
+            <p class="mt-6 max-w-2xl text-xl leading-[1.35] text-muted sm:text-2xl lg:text-[2rem]">
+              Curated expert calls for biotech, pharma, and healthtech teams.
+            </p>
+            <div class="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
+              <a
+                href="https://forms.google.com/PLACEHOLDER"
+                class="inline-flex items-center justify-center rounded-full bg-accent px-6 py-3 text-sm font-semibold text-paper transition-colors hover:bg-[#5f6b56]"
+              >
+                Request a Call
+              </a>
+              <a href="#how-it-works" class="text-sm font-semibold text-ink underline decoration-[rgba(111,124,102,0.4)] decoration-1 underline-offset-4 transition-colors hover:text-accent">
+                See How It Works
+              </a>
+            </div>
+          </div>
+
+          <aside class="border-t border-[rgba(31,41,51,0.14)] pt-6 lg:max-w-sm lg:border-t-0 lg:border-l lg:pl-8 lg:pt-0">
+            <p class="micro text-sm font-semibold text-ink/80 uppercase">Private, managed service</p>
+            <p class="mt-4 text-[1.075rem] leading-8 text-muted">
+              I scope the request, identify the right expert, brief them on context, and manage the engagement end to end.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <div class="mx-auto max-w-6xl px-5 sm:px-6 lg:px-8">
+        <div class="divider h-px w-full"></div>
+      </div>
+
+      <section id="what-this-is" class="reveal mx-auto max-w-6xl px-5 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+        <div class="grid gap-8 lg:grid-cols-[0.7fr_1.3fr] lg:gap-16">
+          <div>
+            <p class="micro text-xs font-semibold text-accent uppercase">What this is</p>
+          </div>
+          <div class="max-w-3xl space-y-5 text-lg leading-8 text-muted">
+            <p>
+              This is a curated advisory service for situations where experience matters more than volume. If you need a clear view on a licensing decision, a valuation question, a commercial tradeoff, or a partnership path, I help you reach the right expert quickly.
+            </p>
+            <p>
+              I do the matchmaking and the scoping myself. That means the call is prepared around your actual question, not around a generic profile or a broad, open-ended conversation.
+            </p>
+            <p>
+              The goal is simple: give you focused, experience-based insight in one efficient call so you can move forward with more confidence.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="mx-auto max-w-6xl px-5 sm:px-6 lg:px-8">
+        <div class="divider h-px w-full"></div>
+      </div>
+
+      <section id="who-its-for" class="reveal mx-auto max-w-6xl px-5 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+        <div class="grid gap-8 lg:grid-cols-[0.7fr_1.3fr] lg:gap-16">
+          <div>
+            <p class="micro text-xs font-semibold text-accent uppercase">Who it&apos;s for</p>
+          </div>
+          <div class="max-w-3xl">
+            <p class="text-lg leading-8 text-muted">
+              Built for biotech, pharma, and healthtech founders and leadership teams, especially smaller and mid-sized companies navigating high-stakes decisions without large internal teams.
+            </p>
+            <ul class="mt-6 space-y-3 border-l border-[rgba(31,41,51,0.14)] pl-5 text-base leading-7 text-ink">
+              <li>Teams evaluating licensing, pricing, or deal structure.</li>
+              <li>Leaders pressure-testing valuation or commercial assumptions.</li>
+              <li>Founders planning launches, partnerships, or business development moves.</li>
+              <li>Groups that need a sharper point of view before committing time or capital.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <div class="mx-auto max-w-6xl px-5 sm:px-6 lg:px-8">
+        <div class="divider h-px w-full"></div>
+      </div>
+
+      <section id="areas-of-focus" class="reveal mx-auto max-w-6xl px-5 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+        <div class="grid gap-8 lg:grid-cols-[0.7fr_1.3fr] lg:gap-16">
+          <div>
+            <p class="micro text-xs font-semibold text-accent uppercase">Areas of focus</p>
+          </div>
+          <div class="max-w-3xl">
+            <ul class="space-y-4 text-xl leading-9 text-ink sm:text-[1.45rem]">
+              <li class="border-b border-[rgba(31,41,51,0.1)] pb-4">Licensing &amp; deal structuring</li>
+              <li class="border-b border-[rgba(31,41,51,0.1)] pb-4">Valuation &amp; pricing strategy</li>
+              <li class="border-b border-[rgba(31,41,51,0.1)] pb-4">Commercial strategy &amp; launch planning</li>
+              <li class="border-b border-[rgba(31,41,51,0.1)] pb-4">Business development &amp; partnerships</li>
+              <li>Market landscape &amp; competitive positioning</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <div class="mx-auto max-w-6xl px-5 sm:px-6 lg:px-8">
+        <div class="divider h-px w-full"></div>
+      </div>
+
+      <section id="how-it-works" class="reveal mx-auto max-w-6xl px-5 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+        <div class="grid gap-8 lg:grid-cols-[0.7fr_1.3fr] lg:gap-16">
+          <div>
+            <p class="micro text-xs font-semibold text-accent uppercase">How it works</p>
+          </div>
+          <ol class="grid gap-6 lg:grid-cols-3">
+            <li class="border border-[rgba(31,41,51,0.1)] bg-[rgba(255,255,255,0.18)] p-6 shadow-soft">
+              <p class="micro text-xs font-semibold text-accent uppercase">01</p>
+              <h3 class="mt-5 text-2xl text-ink">Share your question or decision</h3>
+              <p class="mt-3 text-base leading-7 text-muted">
+                Tell me what you&apos;re working through and what kind of expertise would help.
+              </p>
+            </li>
+            <li class="border border-[rgba(31,41,51,0.1)] bg-[rgba(255,255,255,0.18)] p-6 shadow-soft">
+              <p class="micro text-xs font-semibold text-accent uppercase">02</p>
+              <h3 class="mt-5 text-2xl text-ink">I identify and brief the right expert</h3>
+              <p class="mt-3 text-base leading-7 text-muted">
+                I find someone with direct, relevant experience and prepare them on your context.
+              </p>
+            </li>
+            <li class="border border-[rgba(31,41,51,0.1)] bg-[rgba(255,255,255,0.18)] p-6 shadow-soft">
+              <p class="micro text-xs font-semibold text-accent uppercase">03</p>
+              <h3 class="mt-5 text-2xl text-ink">You get a focused advisory call</h3>
+              <p class="mt-3 text-base leading-7 text-muted">
+                A structured, efficient call designed to give you actionable, experience-based insight.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <div class="mx-auto max-w-6xl px-5 sm:px-6 lg:px-8">
+        <div class="divider h-px w-full"></div>
+      </div>
+
+      <section id="approach" class="reveal mx-auto max-w-6xl px-5 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+        <div class="grid gap-8 lg:grid-cols-[0.7fr_1.3fr] lg:gap-16">
+          <div>
+            <p class="micro text-xs font-semibold text-accent uppercase">The approach</p>
+          </div>
+          <div class="max-w-3xl space-y-5 text-lg leading-8 text-muted">
+            <p>
+              Experts participate in a personal capacity, sharing experience-based insight rather than confidential information.
+            </p>
+            <p>
+              Every engagement is carefully scoped, so the conversation stays useful, relevant, and focused on the decision in front of you.
+            </p>
+            <p>
+              This is not a marketplace where you browse profiles. I do the curation so you don&apos;t have to.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="mx-auto max-w-6xl px-5 sm:px-6 lg:px-8">
+        <div class="divider h-px w-full"></div>
+      </div>
+
+      <section id="contact" class="reveal mx-auto max-w-6xl px-5 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+        <div class="grid gap-8 lg:grid-cols-[0.7fr_1.3fr] lg:gap-16">
+          <div>
+            <p class="micro text-xs font-semibold text-accent uppercase">Request a call</p>
+          </div>
+          <div class="max-w-3xl">
+            <p class="text-lg leading-8 text-muted">
+              Tell me about the decision you&apos;re working through, and I&apos;ll get back to you within one business day.
+            </p>
+            <div class="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
+              <a
+                href="https://forms.google.com/PLACEHOLDER"
+                class="inline-flex items-center justify-center rounded-full bg-ink px-6 py-3 text-sm font-semibold text-paper transition-colors hover:bg-[#31404a]"
+              >
+                Request a Call
+              </a>
+              <a class="text-sm font-semibold text-muted transition-colors hover:text-ink" href="mailto:partnerbridge7@gmail.com">
+                partnerbridge7@gmail.com
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-[rgba(31,41,51,0.08)]">
+      <div class="mx-auto flex max-w-6xl flex-col gap-3 px-5 py-8 text-sm text-muted sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+        <p>PartnerBridge Advisory — Curated expert advisory for life sciences and healthtech.</p>
+        <a class="font-semibold text-ink transition-colors hover:text-accent" href="mailto:partnerbridge7@gmail.com">partnerbridge7@gmail.com</a>
+      </div>
+    </footer>
+
+    <script>
+      const sections = document.querySelectorAll(".reveal");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          threshold: 0.15,
+          rootMargin: "0px 0px -8% 0px",
+        }
+      );
+
+      sections.forEach((section) => observer.observe(section));
+    </script>
+  </body>
+</html>
