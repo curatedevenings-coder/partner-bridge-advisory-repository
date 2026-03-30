@@ -116,7 +116,7 @@
         </section>
 
         <section class="rounded-[2rem] border border-[rgba(31,41,51,0.08)] bg-white p-5 shadow-soft sm:p-7">
-          <form class="space-y-5" action="mailto:partnerbridge7@gmail.com" method="post" enctype="text/plain">
+          <form class="space-y-5" id="intake-form">
             <div>
               <label for="full-name" class="mb-2 block text-sm font-semibold text-ink">Full name</label>
               <input id="full-name" name="Full name" required type="text" class="w-full rounded-2xl border border-[rgba(31,41,51,0.12)] bg-white px-4 py-3 text-ink outline-none transition focus:border-[rgba(107,118,102,0.5)] focus:ring-2 focus:ring-[rgba(107,118,102,0.12)]" />
@@ -170,12 +170,44 @@
               <textarea id="anything-else" name="Anything else" rows="3" class="w-full rounded-2xl border border-[rgba(31,41,51,0.12)] bg-white px-4 py-3 text-ink outline-none transition focus:border-[rgba(107,118,102,0.5)] focus:ring-2 focus:ring-[rgba(107,118,102,0.12)]"></textarea>
             </div>
             <button type="submit" class="inline-flex w-full items-center justify-center rounded-full bg-accent px-6 py-3 text-sm font-semibold text-paper transition-colors hover:bg-[#5f6b56]">
-              Submit request
+              Continue in email
             </button>
-            <p class="text-center text-sm text-muted">This is a preview of the public intake flow. We can wire the submit action to Google Forms next if you want a real live collection endpoint.</p>
+            <p class="text-center text-sm text-muted">This currently opens a pre-filled email to PartnerBridge. Once a live form endpoint is connected, submissions can happen directly on the site.</p>
           </form>
         </section>
       </div>
     </main>
+
+    <script>
+      const intakeForm = document.getElementById("intake-form");
+
+      intakeForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const formData = new FormData(intakeForm);
+        const lines = [
+          `Full name: ${formData.get("Full name") || ""}`,
+          `Work email: ${formData.get("Work email") || ""}`,
+          `Company: ${formData.get("Company") || ""}`,
+          `Role / title: ${formData.get("Role / title") || ""}`,
+          "",
+          "What decision or question are you working through?",
+          `${formData.get("Decision or question") || ""}`,
+          "",
+          `Which area best fits your request?: ${formData.get("Which area best fits your request?") || ""}`,
+          `How time-sensitive is this?: ${formData.get("How time-sensitive is this?") || ""}`,
+          "",
+          "What kind of expert perspective would be most useful?",
+          `${formData.get("Expert perspective needed") || ""}`,
+          "",
+          "Anything else I should know before following up?",
+          `${formData.get("Anything else") || ""}`,
+        ];
+
+        const subject = encodeURIComponent("PartnerBridge Advisory Intake");
+        const body = encodeURIComponent(lines.join("\n"));
+        window.location.href = `mailto:partnerbridge7@gmail.com?subject=${subject}&body=${body}`;
+      });
+    </script>
   </body>
 </html>
